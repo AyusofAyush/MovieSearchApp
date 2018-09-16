@@ -1,0 +1,32 @@
+<% include partials/header %>
+<div class="container mt-2 text-center">
+    <div class="row">
+        <div class="col-sm-2 col-md-3 col-lg-3"></div>
+        <div class="col-sm-8 col-md-6 col-lg-6">
+                <div class="card border-warning" style="color: black;width: 80%;;">
+                        <div class="card-header"><%= data.Title %></div>
+                        <img class="card-img img-thumbnail" src="<%= data.Poster %>" alt="Card image" style="">
+                       
+                        <div class="card-body">
+                          <h5 class="card-title"><%= data.Title %></h5>
+                          <p class="card-text">
+                              Year: <%= data.Year %><br>
+                              Rated: <%= data.Rated %><br>
+                              Released: <%= data.Released %><br>
+                              Genre: <%= data.Genre %><br>
+                              Director: <%= data.Director %><br>
+                              Writer: <%= data.Writer %><br>
+                              Plot: <%= data.Plot %><br>
+                              Language: <%= data.Language %><br>
+                              Country: <%= data.Country %><br>
+                              imdbRating: <%= data.imdbRating %><br>
+                              Type: <%= data.Type %><br>
+                              Production: <%= data.Production %><br>
+                          </p>
+                        </div>
+        </div>
+        <div class="col-sm-2 col-md-3 col-lg-3"></div>
+    </div>   
+</div>
+
+<% include partials/footer %>

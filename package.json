@@ -1,0 +1,21 @@
+{
+  "name": "imdb_app",
+  "version": "1.0.0",
+  "description": "Its a Imdb open Api movie search App",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Ayush Raj",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}

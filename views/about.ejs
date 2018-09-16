@@ -1,0 +1,31 @@
+<% include partials/header %>
+<body onload="typeWriter()">
+<div class="container mt-2 text-center">
+    <div class="row">
+        <div class="col-sm-2 col-md-3 col-lg-3"></div>
+        <div class="col-sm-8 col-md-6 col-lg-6">
+            <h2 id="demo"></h2>
+
+            <script>
+                var i = 0;
+                var txt = 'Developed with <3 by Ayush Raj....\
+                            This is a REST API based NodeJs Application...!!\
+                            You can Make a movie Search request and If movie is rated under ImDb then it will appear to you....You can click on more info to get the information of particular movie.\
+                            Thanks for visiting...Enjoy!! ;-)\
+                            >_ https://github.com/Ayusofayush _<';
+                var speed = 60;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+            </script>
+        </div>
+        <div class="col-sm-2 col-md-3 col-lg-3"></div>
+    </div>   
+</div>
+</body>
+<% include partials/footer %>
